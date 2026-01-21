@@ -33,10 +33,10 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
-            opacity: 0.03;
-            width: 600px;
-            height: 600px;
+            transform: translate(-50%, -50%) rotate(-15deg);
+            opacity: 0.025;
+            width: 700px;
+            height: auto;
             pointer-events: none;
             z-index: 0;
         }
@@ -54,7 +54,7 @@
         }
 
         .logo {
-            width: 120px;
+            width: 150px;
             height: auto;
             margin-bottom: 20px;
         }
@@ -195,11 +195,13 @@
 </head>
 <body>
     <div class="page">
-        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cpath fill='%23c41e3a' d='M100 40 L130 80 L170 90 L135 125 L145 165 L100 140 L55 165 L65 125 L30 90 L70 80 Z'/%3E%3C/svg%3E" class="watermark" alt="Watermark">
+        <!-- Watermark in background -->
+        <img src="https://i.imgur.com/placeholder.png" class="watermark" alt="Watermark" style="display:none;">
         
         <div class="content">
             <div class="header">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cpath fill='%23c41e3a' d='M100 40 L130 80 L170 90 L135 125 L145 165 L100 140 L55 165 L65 125 L30 90 L70 80 Z'/%3E%3C/svg%3E" class="logo" alt="VSRP Logo">
+                <!-- Main logo - you'll need to upload your cardinal image to replace this -->
+                <div style="width: 150px; height: 150px; margin: 0 auto 20px; background: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%2250%22 font-size=%2250%22>🐦</text></svg>') center/contain no-repeat;"></div>
                 <h1>Staff Handbook</h1>
                 <p class="subtitle">Virginia State Roleplay</p>
             </div>
